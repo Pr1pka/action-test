@@ -14,4 +14,6 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Print my initials
-        run: ./script.sh
+        run: |
+          sudo chmod 777 script.sh
+          ./script.sh
